@@ -1,0 +1,240 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: #ffffff;
+}
+
+header {
+    background: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+}
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 30px auto;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(255, 255, 255);
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input,
+textarea,
+select,
+button {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+
+button {
+    background: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e31a1a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    vertical-align: top;
+}
+
+td.description {
+    max-width: 300px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.status-pending {
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+.status-completed {
+    color: #10b981;
+    font-weight: bold;
+}
+
+.actions a {
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.complete {
+    background: #10b981;
+}
+
+.delete {
+    background: #ef4444;
+}
+
+.edit {
+    background: #f59e0b;
+}
+
+.progress-bar {
+    margin-top: 20px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress-fill {
+    background: #ff1616;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgb(255, 255, 255);
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.close:hover {
+    color: #e31a1a;
+}
+
+.navigation {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.nav-button {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #2563eb;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+}
+
+.nav-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.nav-button.active {
+    background: #e31a1a;
+    transform: none;
+    cursor: default;
+}
+
+.password-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.password-container p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input[type=password],
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.success {
+    color: #10b981;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.forgot-password-form {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}

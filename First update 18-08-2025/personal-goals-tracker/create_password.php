@@ -2,7 +2,7 @@
 include "db.php";
 session_start();
 
-// Redirect if already logged in
+// Redirect if already logged in to system
 if (isset($_SESSION['access_granted'])) {
     header("Location: hidden.php");
     exit;

@@ -2,7 +2,7 @@
 session_start();
 include "db.php";
 
-// Fetch the stored password
+// Fetch the stored password.
 $result = $conn->query("SELECT password FROM passwords LIMIT 1");
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();

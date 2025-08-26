@@ -8,7 +8,7 @@ if (isset($_SESSION['access_granted'])) {
     exit;
 }
 
-// Check if password already exists
+// Check if password already exists then 
 $result = $conn->query("SELECT * FROM passwords");
 if ($result->num_rows > 0) {
     header("Location: hidden.php");

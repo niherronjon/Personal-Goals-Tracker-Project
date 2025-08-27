@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$user = "root";   // change if needed
+$user = "root";   // change if needed based db
 $pass = "";       // your DB password
 $dbname = "goal_tracker";
 
